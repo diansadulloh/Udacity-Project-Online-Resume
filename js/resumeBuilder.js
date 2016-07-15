@@ -60,7 +60,7 @@ var projects = {
     "projects": [
         {
             "title": "Build a Portfolio Site",
-            "datesWorked": "December 2014 - January 2015",
+            "datesWorked": "Juny 2016",
             "description": "Udacity Front-End Web Developer project",
             "images": ["images/portfolio.jpg"],
             "url": "http://dians.me/Udacity-Project-Build-a-Portfolio-Site/"
