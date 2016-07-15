@@ -11,7 +11,7 @@ This is empty on purpose! Your code to build the resume will go here.
         "twitter": "@diansadulloh",
         "location": "Demak, Central Java, ID"
     },
-    "picture": "images/pp.jpg",
+    "biopic": "images/pp.jpg",
     "welcomeMessage": "I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces.",
     "skills": ["Photoshop", "Illustrator", "HTML5", "CSS3", "SEO"]
 };
