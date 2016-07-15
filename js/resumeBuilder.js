@@ -188,7 +188,6 @@ education.display = function() {
                 $(".education-entry:last").append(formattedOnlineURL);
             }
         }
-
     }
 }
 
