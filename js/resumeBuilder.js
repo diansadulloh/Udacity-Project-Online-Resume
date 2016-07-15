@@ -63,7 +63,7 @@ var projects = {
     "projects": [
         {
             "title": "Build a Portfolio Site",
-            "datesWorked": "Juny 2016",
+            "dates": "Juny 2016",
             "description": "Udacity Front-End Web Developer project",
             "images": ["images/portfolio.jpg"],
             "url": "http://dians.me/Udacity-Project-Build-a-Portfolio-Site/"
@@ -103,7 +103,7 @@ for(i in formattedContactInfo) {
 }
 
 
-function displayWork() {
+work.display = function () {
 
     if(work.jobs.length > 0) {
 
@@ -128,7 +128,7 @@ function displayWork() {
 
 }
 
-displayWork();
+work.display();
 
 
 projects.display = function() {
@@ -137,7 +137,7 @@ projects.display = function() {
             $("#projects").append(HTMLprojectStart);
 
             var formattedProjectTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title).replace("#", projects.projects[i].url);
-            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].datesWorked);
+            var formattedProjectDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
             var formattedProjectDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
 
             $(".project-entry:last").append(formattedProjectTitle);
