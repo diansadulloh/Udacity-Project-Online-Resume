@@ -48,12 +48,12 @@ var education = {
     "onlineCourses": [
         { "school": "Udacity",
             "title": "Android Basics Nanodegree by Google",
-            "completed": "Juny 2016",
+            "dates": "Juny 2016",
             "url": "https://www.udacity.com/course/android-basics-nanodegree-by-google--nd803"
         },
         { "school": "Udacity",
             "title": "Front-End Web Developer Nanodegree",
-            "completed": "Juny 2016",
+            "dates": "Juny 2016",
             "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         }
     ]
@@ -180,7 +180,7 @@ education.display = function() {
                 $("#education").append(HTMLschoolStart);
                 var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[i].title).replace("#", education.onlineCourses[i].url);
                 var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[i].school);
-                var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].completed);
+                var formattedOnlineDates = HTMLonlineDates.replace("%data%", education.onlineCourses[i].dates);
                 var formattedOnlineURL = HTMLonlineURL.replace("%data%", education.onlineCourses[i].url).replace("#", education.onlineCourses[i].url);
 
                 $(".education-entry:last").append(formattedOnlineTitle + formattedOnlineSchool);
