@@ -36,6 +36,12 @@ var work = {
 };
 
 var education = {
+        "schools": [
+        { "name": "API Tegalrejo",
+            "datesAttended": "2002 - 2006",
+            "location": "Magelang, Central Java, ID"
+        }
+    ],
     "onlineCourses": [
         { "school": "Udacity",
             "title": "Android Basics Nanodegree by Google",
@@ -152,19 +158,15 @@ education.display = function() {
         for(i in education.schools) {
             $("#education").append(HTMLschoolStart);
 
-            var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name).replace("#", education.schools[i].url);
-            var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
+            var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name);
             var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
             var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
-            var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
-            var formattedSchoolMinor = HTMLschoolMinor.replace("%data%", education.schools[i].minor);
 
-            $(".education-entry:last").append(formattedSchoolName + formattedSchoolDegree);
+            $(".education-entry:last").append(formattedSchoolName);
             $(".education-entry:last").append(formattedSchoolDates);
             $(".education-entry:last").append(formattedSchoolLocation);
-            $(".education-entry:last").append(formattedSchoolMajor);
-            $(".education-entry:last").append(formattedSchoolMinor);
         }
+
 
         if(education.onlineCourses.length > 0) {
             $("#education").append(HTMLonlineClasses);
