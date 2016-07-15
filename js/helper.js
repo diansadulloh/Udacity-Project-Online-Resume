@@ -50,7 +50,7 @@ var HTMLschoolLocation = "<div class='location-text'>%data%</div>";
 var HTMLschoolMajor = "<em><br>Major: %data%</em>"
 var HTMLschoolMinor = "<em><br>Minor: %data%</em>"
 
-var HTMLonlineClasses = "";
+var HTMLonlineClasses = "<br/>";
 var HTMLonlineTitle = "<a href='#'>%data%";
 var HTMLonlineSchool = " - %data%</a>";
 var HTMLonlineDates = "<div class='date-text'>%data%</div>";
