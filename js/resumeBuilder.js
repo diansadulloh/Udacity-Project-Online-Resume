@@ -29,7 +29,7 @@ var work = {
             "employer": "Kopi Luwak Shop",
             "title": "Founder",
             "location": "Demak, Central Java, ID",
-            "datesWorked": "January 2016 - Current",
+            "dates": "January 2016 - Current",
             "description": "For the purpose of making the purchase of kopi luwak coffee more transparent and safe, we decided to list the most reliable kopi luwak shops on this website. Moreover, we created a quality certificate for this extraordinary coffee experience."
         }
     ]
@@ -39,7 +39,10 @@ var education = {
         "schools": [
         { "name": "API Tegalrejo",
             "datesAttended": "2002 - 2006",
-            "location": "Magelang, Central Java, ID"
+            "location": "Magelang, Central Java, ID",
+            "degree": "Dagree",
+            "major": "Major",
+            "url": "www.domain.com"
         }
     ],
     "onlineCourses": [
@@ -110,7 +113,7 @@ function displayWork() {
             var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[i].employer);
             var formattedWorkTitle = HTMLworkTitle.replace("%data%", work.jobs[i].title);
             var formattedWorkLocation = HTMLworkLocation.replace("%data%", work.jobs[i].location);
-            var formattedDatesWorked = HTMLworkDates.replace("%data%", work.jobs[i].datesWorked);
+            var formattedDatesWorked = HTMLworkDates.replace("%data%", work.jobs[i].dates);
             var formattedWorkDescription = HTMLworkDescription.replace("%data%", work.jobs[i].description);
 
             var formattedEmployerWorkTitle = formattedEmployer + formattedWorkTitle;
@@ -160,11 +163,14 @@ education.display = function() {
 
             var formattedSchoolName = HTMLschoolName.replace("%data%", education.schools[i].name);
             var formattedSchoolDates = HTMLschoolDates.replace("%data%", education.schools[i].datesAttended);
+            var formattedSchoolMajor = HTMLschoolMajor.replace("%data%", education.schools[i].major);
+            var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", education.schools[i].degree);
             var formattedSchoolLocation = HTMLschoolLocation.replace("%data%", education.schools[i].location);
 
             $(".education-entry:last").append(formattedSchoolName);
             $(".education-entry:last").append(formattedSchoolDates);
             $(".education-entry:last").append(formattedSchoolLocation);
+            $(".education-entry:last").append(formattedSchoolMajor);
         }
 
 
