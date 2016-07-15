@@ -57,7 +57,7 @@ var HTMLonlineDates = "<div class='date-text'>%data%</div>";
 var HTMLonlineURL = "<br><a href='#'>%data%</a>";
 
 var internationalizeButton = "<button>Internationalize</button>";
-var googleMap = "<div id='mapDiv'></div>";
+var googleMap = "<div id='map'></div>";
 
 
 /*
